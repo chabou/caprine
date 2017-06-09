@@ -1,9 +1,9 @@
 {
   "name": "caprine",
-  "productName": "Caprine",
+  "productName": "WorkChat",
   "version": "2.4.0",
   "license": "MIT",
-  "repository": "sindresorhus/caprine",
+  "repository": "chabou/caprine",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -56,7 +56,7 @@
       "**/*",
       "!media${/*}"
     ],
-    "appId": "com.sindresorhus.caprine",
+    "appId": "com.winamax.workchat",
     "mac": {
       "category": "public.app-category.social-networking",
       "target": [
