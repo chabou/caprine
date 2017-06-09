@@ -12,7 +12,7 @@ const tray = require('./tray');
 
 const {app, ipcMain} = electron;
 
-app.setAppUserModelId('com.sindresorhus.caprine');
+app.setAppUserModelId('com.winamax.workchat');
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
