@@ -38,7 +38,7 @@ if (isAlreadyRunning) {
 
 function updateBadge(title) {
 	// ignore `Sindre messaged you` blinking
-	if (title.indexOf('Messenger') === -1) {
+	if (title.indexOf('Work Chat') === -1) {
 		return;
 	}
 
