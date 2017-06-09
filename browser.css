@@ -136,3 +136,9 @@ a,
 	max-height: 100% !important;
 	height: 280px;
 }
+
+/* Hide header */
+#pagelet_bluebar {
+	display: none;
+	background-color: red;
+}

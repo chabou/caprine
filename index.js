@@ -87,7 +87,7 @@ function enableHiresResources() {
 	electron.session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
 		let cookie = details.requestHeaders.Cookie;
 
-		if (cookie && details.method === 'GET' && details.url.startsWith('https://www.messenger.com/')) {
+		if (cookie && details.method === 'GET' && details.url.startsWith('https://winamax.facebook.com/')) {
 			if (/(; )?dpr=\d/.test(cookie)) {
 				cookie = cookie.replace(/dpr=\d/, `dpr=${scaleFactor}`);
 			} else {
@@ -106,7 +106,7 @@ function enableHiresResources() {
 
 function setUpPrivacyBlocking() {
 	const ses = electron.session.defaultSession;
-	const filter = {urls: ['*://*.messenger.com/*typ.php*', '*://*.messenger.com/*change_read_status.php*']};
+	const filter = {urls: ['*://*.winamax.facebook.com/*typ.php*', '*://*.winamax.facebook.com/*change_read_status.php*']};
 	ses.webRequest.onBeforeRequest(filter, (details, callback) => {
 		let blocking = false;
 		if (details.url.includes('typ.php')) {
@@ -160,7 +160,7 @@ function createMainWindow() {
 		win.setSheetOffset(40);
 	}
 
-	win.loadURL('https://www.messenger.com/login/');
+	win.loadURL('https://winamax.facebook.com/chat/');
 
 	win.on('close', e => {
 		if (!isQuitting) {
