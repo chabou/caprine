@@ -245,7 +245,7 @@ app.on('ready', () => {
 				e.newGuest = new electron.BrowserWindow(options);
 			}
 		} else {
-			if (url.startsWith('https://l.messenger.com/l.php')) {
+			if (url.startsWith('https://l.messenger.com/l.php') || url.startsWith('https://l.facebook.com/l.php')) {
 				url = new URL(url).searchParams.get('u');
 			}
 
